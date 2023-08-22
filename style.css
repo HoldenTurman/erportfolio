@@ -1,0 +1,541 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100;300;400&family=MonteCarlo&display=swap");
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'MonteCarlo', cursive;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*GENERAL STYLING-----------------------*/
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+/*HAMBURGER MENU-----------------*/
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+/*---------------Hero--------------*/
+.hero {
+  background-image: url("./assets/ELIZABETH-HEADER.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-heading {
+  color: white;
+  text-align: center;
+  margin-bottom: 125px;
+  /*adjust with margins and paddings*/
+}
+
+.hero-heading h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  padding: 50px;
+}
+
+.hero-heading h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+/*----------------NAVBAR--------------*/
+
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  list-style: none;
+  text-decoration: none;
+  background-color: #f6f1eb;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-nav {
+  font-size: 20px;
+  padding: 9px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background-color: #f6f1eb;
+  border-radius: 5%;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-nav:hover {
+  transition: all 0.3s ease 0s;
+  background-color: white;
+}
+
+/*-----------WELCOME----------------*/
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* padding: 300px; */
+  width: 70%;
+  margin-left: 260px;
+  text-align: center;
+}
+
+.welcome h2 {
+  font-family: "MonteCarlo", cursive;
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 25px;
+  text-align: center;
+}
+
+.welcome h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.welcome h4 {
+  font-family: "sans-serif";
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.welcome p {
+  font-family: "sans-serif";
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+/*---------------ABOUT--------------------*/
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  border-radius: 10%;
+  z-index: -1;
+}
+
+.about-me .text-box {
+  /* display: flex;
+  justify-content: center; */
+  background-color: #f6f1eb;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 35%;
+  margin: -100px auto 0;
+  text-align: center;
+  /* align-items: center; */
+}
+
+.text-box h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: lighter;
+}
+
+.text-box .text-box-p1 {
+  text-align: center;
+  font-family: "sans-serif";
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.text-box p {
+  text-align: center;
+  font-family: "sans-serif";
+  padding: 20px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.text-box a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.text-box a:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.about-specifics-container {
+  display: flex;
+  margin-top: 100px;
+  padding: 50px;
+}
+
+.families {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.about-specifics {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-specifics h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  font-weight: lighter;
+}
+.about-specifics p {
+  padding: 10px;
+}
+
+.about-specifics a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.about-specifics a:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+/*---------PORTFOLIO-----------------*/
+
+/* .portfolio-img-container {
+} */
+
+/* .portfolio-img {
+} */
+
+.portfolio {
+  padding: 300px;
+}
+
+.portfolio-h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+  padding-top: 100px;
+}
+
+.portfolio-h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+  padding-bottom: 50px;
+}
+
+.portfolio-img-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.portfolio-img-container img {
+  margin: 50px;
+}
+
+.title-container {
+  transform: rotate(-90deg);
+  /* margin-left: 100px; */
+  /* margin-top: 50px; */
+  position: relative;
+  right: 26%;
+  margin-bottom: 150px;
+  z-index: 1;
+}
+
+.title-container h1 {
+  white-space: nowrap;
+  position: absolute;
+  font-weight: lighter;
+  font-size: 60px;
+}
+
+.textbox-img-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-left: 450px;
+  /* width: 70%; */
+  /* margin: auto; */
+  /* align-items: center; */
+  /* position: relative; */
+  /* margin-top: 100px; */
+}
+
+.textbox-img-container img {
+  z-index: -1;
+  width: 50%;
+  /* position: absolute;
+  left: 45%; */
+}
+
+.textbox {
+  background-color: #f6f1eb;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 40%;
+  position: absolute;
+  /* bottom: 10%; */
+  top: 40%;
+  right: 60%;
+  padding: 20px;
+  text-align: center;
+  /* margin-left: 100px; */
+}
+
+.textbox h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.textbox p {
+  font-family: "Lato";
+  padding: 5px;
+  margin: 20px;
+  text-align: center;
+}
+
+.textbox a {
+  text-decoration: none;
+  color: black;
+}
+
+.textbox a:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+/*---BANNER IMG---*/
+
+/* .banner-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 150px;
+} */
+
+.banner-img-text-box {
+  background-image: url("./assets/okc\ and\ surrounding\ areas\ background\ picture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-heading {
+  padding: 30px;
+  margin: 30px;
+  background-color: #f6f1eb;
+}
+
+.banner-heading h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+/*-------CONTACT-------*/
+
+#contact {
+  margin-top: 12px;
+  padding-top: 20px;
+  background-color: #f6f1eb;
+  width: 100%;
+}
+
+#contact .contact-container {
+  display: flex;
+  margin-top: 12px;
+  padding-top: 20px;
+  /* padding: 0 30px; */
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.contact-text p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  font-size: 50px;
+  padding: 10px;
+  padding-bottom: 200px;
+  margin-left: 55px;
+}
+
+.contact-link a {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: brown;
+}
+
+.contact-link a:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+/*----FOOTER-----*/
+
+footer {
+  width: 100%;
+  background-color: #f6f1eb;
+}
+
+.footer-nav-links {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  list-style: none;
+  gap: 5rem;
+}
+
+.footer-nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav-links a:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.footer-p {
+  font-family: "Lato";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+/*MEDIA QUERIES--------------------------------------*/
+
+@media (max-width: 480px) {
+  .hero {
+    background-image: url("./assets/ELIZABETH-HEADER.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero-heading {
+    color: white;
+    text-align: center;
+    margin-bottom: 115px;
+    /*adjust with margins and paddings*/
+  }
+
+  .hero-heading h2 {
+    font-size: 30px;
+    padding: 30px;
+  }
+
+  .hero-heading h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+/*@media (min-width: 768px) and (max-width: 991px)*/
+
+/*@media (min-with: 992px) and (max-width: 1199px)*/
+
+/*@media (min-width: 1200px) and (max-width: 1919px)*/
